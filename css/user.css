@@ -64,7 +64,7 @@ width: 30%;
 #profile-settings > * {
 background-color: rgba(191, 191, 191, 0.8);
 padding: 40px;
-border-radius: 20%;
+border-radius: 100px;
 margin-bottom: 20px;
 }
 
@@ -74,5 +74,5 @@ width: 40%;
 float: right;
 background-color: rgb(255, 255, 255, 0.8);
 padding: 40px;
-border-radius: 20%;
+border-radius: 100px;
 }
