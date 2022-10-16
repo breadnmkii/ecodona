@@ -11,6 +11,7 @@ function check_login() {
     .then(function (data) {
       if (data.success) {
         console.log("logged in");
+        updateDashboard;
       } else {
         console.log("not logged in");
       }
@@ -43,40 +44,39 @@ function showDonations() {
     .then((response) => response.json())
     .then(function (data) {
       if (data.success) {
-        eventid_arr = data.eventid_arr;
+        donationname_arr = data.eventid_arr;
         eventdate_arr = data.eventdate_arr;
         group_share_arr = data.group_share_arr;
 
-        //display each event inside the proper cells
+        let donation_container = document.getElementById("donation-cards");
+
+        //create card for each donation
         for (let i = 0; i < eventdate_arr.length; i++) {
-          //get id of the cell the event should be in
-          let cell = document.getElementById(eventdate_arr[i]);
+          let card = document.createElement("div").classList.add("card");
+          let donor_name = document.createTextNode(title_arr[i]);
+          event_box.appendChild(event_display);
 
-          //check if cell id is currently present
-          if (cell == null) {
-            //this means the cell for the current event doesn't exist on the page, go to next element
-          } else {
-            //create the div for where the event will be displayed
-
-            let event_box = document.createElement("div");
-            let event_display = document.createTextNode(title_arr[i]);
-            event_box.appendChild(event_display);
-            //if it is null, not a shared event
-            if (!group_share_arr[i]) {
-              event_box.setAttribute("class", "event_box");
-              event_box.setAttribute("id", eventid_arr[i]);
-              cell.appendChild(event_box);
-            } else {
-              console.log("shared: " + group_share_arr[i]);
-              event_box.setAttribute("class", "locked_event_box");
-              event_box.setAttribute("id", eventid_arr[i]);
-              cell.appendChild(event_box);
-            }
-          }
+          donation_container.append(card);
         }
       }
     })
     .catch((err) => console.error(err));
+}
+
+function createLevelSvg(reward_data) {
+  if (reward_data <= 25) {
+    return 1;
+  } else if (reward_data <= 50) {
+    return 2;
+  } else if (reward_data <= 50) {
+    return 3;
+  } else if (reward_data <= 50) {
+    return 4;
+  } else {
+    return 5;
+  }
+
+  return;
 }
 
 /**********************************************************************************************/
