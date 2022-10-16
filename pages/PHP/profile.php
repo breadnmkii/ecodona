@@ -124,8 +124,12 @@ $stmt->fetch();
                     State: <?php echo htmlentities($state) ?>
                 </p>
                 <p class="profile-double-field">
+                    <p class="body1">
                     Zip Code: <?php echo htmlentities($city) ?>
-                    Country: <?php echo htmlentities($state) ?>
+                    </p>
+                    <p class="body1">
+                    Country: <?php echo htmlentities($state) ?>                
+                    </p>
                 </p>
 
             </section>

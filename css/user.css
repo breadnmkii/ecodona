@@ -37,9 +37,6 @@ margin-right: auto;
 width: 50%;
 }
 
-#dashboard-middle img {
-width: 60%;
-}
 
 #dashboard-right {
 margin-right: 5%;
@@ -62,9 +59,9 @@ width: 30%;
 }
 
 #profile-settings > * {
-background-color: rgba(191, 191, 191, 0.8);
+background-color: rgb(255, 255, 255, 0.8);
 padding: 40px;
-border-radius: 100px;
+border-radius: 50px;
 margin-bottom: 20px;
 }
 
@@ -74,5 +71,25 @@ width: 40%;
 float: right;
 background-color: rgb(255, 255, 255, 0.8);
 padding: 40px;
-border-radius: 100px;
+border-radius: 50px;
+}
+
+.profile-card h4, p {
+  margin: 0;
+  /* margin-bottom: 20px; */
+}
+
+.profile h4 {
+  margin-bottom: 20px
+}
+
+.profile-info > * {
+  padding: 10px;
+  background-color: #98b191;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.profile-double-field {
+  display:inline-flex;
 }
