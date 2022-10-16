@@ -36,7 +36,7 @@ function showDonations() {
   let charity_arr, total_arr, group_share_arr;
 
   //get arrays with all events stored
-  fetch("dashboard.php", {
+  fetch("PHP/dashboard.php", {
     method: "POST",
     body: JSON.stringify(),
     headers: { "content-type": "application/json" },
@@ -44,9 +44,9 @@ function showDonations() {
     .then((response) => response.json())
     .then(function (data) {
       if (data.success) {
-        donationname_arr = data.eventid_arr;
-        eventdate_arr = data.eventdate_arr;
-        group_share_arr = data.group_share_arr;
+        charity_arr = data.eventid_arr;
+        reward_arr = data.eventdate_arr;
+        donut_balance_arr = data.group_share_arr;
       
         //create card for each donation
         let donation_container = document.getElementById("donation-cards");
