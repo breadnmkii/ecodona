@@ -2,6 +2,11 @@ body{
     margin: 0;
 }
 
+img{
+    border-radius: 40px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 nav {
     overflow: hidden;
     background-color: white;
@@ -108,6 +113,9 @@ footer{
     margin-left: 10rem;
 }
 
+.landing img{
+    box-shadow: rgba(0,0,0,0) 0px 2px 8px 0px;
+}
 
 .marketingbkg{
     background-color: #6DAC7F;
@@ -194,6 +202,15 @@ footer{
     margin-left: 4rem;
 }
 
+.intro img{
+    box-shadow: rgba(0,0,0,0) 0px 2px 8px 0px;
+}
+
+.intro a{
+    color: #ED7A77;
+}
+
+
 .info2{
     width: 80%;
     margin-left: auto;
@@ -203,6 +220,10 @@ footer{
 
 .info2 h2{
     margin-bottom: 1rem;
+}
+
+.info2 a{
+    color: #ED7A77;
 }
 
 ul{
@@ -226,7 +247,93 @@ li{
     padding-bottom: 20rem;
 }
 
+.info3 a{
+    color: #ED7A77;
+}
+
 .info3 h2{
     margin-bottom: 1rem;
 }
 
+#howitworks{
+    width: 60%;
+    text-align: center;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10rem;
+}
+
+.steps img{
+    width: 624px;
+}
+
+.steps h1{
+    margin-right: 3rem;
+}
+
+.s1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.s2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.s3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.s4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.s4 img{
+    border-radius: 50%;
+}
+
+.lefti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-left: 5rem;
+}
+
+
+.righti{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-right: 5rem;
+}
