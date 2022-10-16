@@ -106,7 +106,7 @@ function showDonations() {
         donut_balance_container.appendChild(donut_balance_node);
 
         const balance_node = document.createElement("h6");
-        const balance_textnode = document.createTextNode(balance_node);
+        const balance_textnode = document.createTextNode("Donut Balance");
         balance_node.appendChild(balance_textnode);
         donut_balance_container.appendChild(balance_node);
       }
