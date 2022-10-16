@@ -96,6 +96,8 @@ function showDonations() {
           
           rewards_div.appendChild(ecodona_icon);
           rewards_div.appendChild(rewards_node);
+
+          card.append(rewards_div);
           
           //append card to donation containera
           donation_container.append(card);
