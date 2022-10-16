@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Congratulations</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/user.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+
+    <style>
+      body {
+        background-color: white;
+        align-items: center;
+        /*position: relative*/
+      }
+      .center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+        margin-top: 200px;
+      }
+      #icon {
+        width: 100px;
+        margin-right: 30px;
+      }
+      .inline {
+        display: flex;
+      }
+      .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 100px;
+        font-weight: 400;
+        float: right;
+        margin: 24px;
+      }
+      a:link, a:visited, a:hover, a:active{
+        color: black;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="dashboard.html" class="close">&times;</a>
+    <div class="center">
+      <h2>Congrats! You have earned</h2>
+      <div class="inline">
+        <img id="icon" src="../images/icons/ecodona_icon.svg" />
+        <h1>32</h1>
+      </div>
+    </div>
+    <img src="../images/congratulations_drawing.svg" />
+  </body>
+</html>
