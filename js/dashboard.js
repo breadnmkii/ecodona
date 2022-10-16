@@ -32,6 +32,7 @@ function updateDashboard() {
 /***  showDonations(): shows all donations on the dashboard                                        ***/
 /*****************************************************************************************************/
 function showDonations() {
+  console.log("show donations")
   let charity_arr, total_arr, group_share_arr;
 
   const data = { token: csrf_token };
