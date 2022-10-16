@@ -75,3 +75,7 @@ body{
 #total-donations{
   text-align: center;
 }
+
+#donut-balance-and-icon{
+  display: flex;
+}
