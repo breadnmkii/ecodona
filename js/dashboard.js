@@ -2,7 +2,7 @@
 let logged_in = false;
 //checks if user is logged in everytime script loads (prevent logout on refresh)
 function check_login() {
-  fetch("check_logged_in.php", {
+  fetch("../pages/PHP/login.php", {
     method: "POST",
     body: JSON.stringify(),
     headers: { "content-type": "application/json" },
@@ -32,81 +32,76 @@ function updateDashboard() {
 /***  showDonations(): shows all donations on the dashboard                                        ***/
 /*****************************************************************************************************/
 function showDonations() {
+  console.log("show donations");
   let charity_arr, total_arr, group_share_arr;
 
-  const data = { token: csrf_token };
   //get arrays with all events stored
-  fetch("getallevents.php", {
+  fetch("../pages/PHP/getDashboardData.php", {
     method: "POST",
-    body: JSON.stringify(data),
+    body: JSON.stringify(),
     headers: { "content-type": "application/json" },
   })
     .then((response) => response.json())
     .then(function (data) {
       if (data.success) {
-        donationname_arr = data.eventid_arr;
-        eventdate_arr = data.eventdate_arr;
-        group_share_arr = data.group_share_arr;
-
-        let donation_container = document.getElementById("donation-cards");
-
+        charity_arr = data.charityNames;
+        reward_arr = data.charityDonuts;
+        donut_balance_arr = data.donutBalance;
+      
         //create card for each donation
-        for (let i = 0; i < eventdate_arr.length; i++) {
+        let donation_container = document.getElementById("donation-cards");
+        for (let i = 0; i < charity_arr.length; i++) {
+          console.log("making cards");
           let card = document.createElement("div").classList.add("card");
-          let donor_name = document.createTextNode(title_arr[i]);
-          event_box.appendChild(event_display);
+
+          //append donor
+          let donor_name = document.createTextNode(charity_arr[i]);
+          card.appendChild(donor_name);
+
+          //append image
+          let img = document.createElement("img");
+          let reward_data = document.createTextNode(reward_arr[i]);
+
+          if (reward_data <= 24) {
+            img.src = "images/reward_images/level0.jpeg";
+          } else if (reward_data <= 49) {
+            img.src = "images/reward_images/level1.jpeg";
+          } else if (reward_data <= 74) {
+            img.src = "images/reward_images/level2.jpeg";
+          } else if (reward_data <= 99) {
+            img.src = "images/reward_images/level3.jpeg";
+          } else if (reward_data <= 499) {
+            img.src = "images/reward_images/level4.jpeg";
+          } else {
+            img.src = "images/reward_images/level5.jpeg";
+          }
+
+          card.appendChild(img);
+
+          //append donut balance
+          let donut_balance = document.createTextNode(donut_balance_arr[i]);
+          card.appendChild(donut_balance);
 
           donation_container.append(card);
         }
+
+
+        //create card for total balance
+        let balance_container = document.getElementById("donut-balance");
       }
     })
     .catch((err) => console.error(err));
 }
 
-function createLevelSvg(reward_data) {
-  if (reward_data <= 25) {
-    return 1;
-  } else if (reward_data <= 50) {
-    return 2;
-  } else if (reward_data <= 50) {
-    return 3;
-  } else if (reward_data <= 50) {
-    return 4;
-  } else {
-    return 5;
-  }
-
-  return;
-}
-
 /**********************************************************************************************/
 /***  viewDetails(): shares event with another user ****************************/
 /**********************************************************************************************/
+/*
 document
   .getElementsByClass("view_details")
   .addEventListener("click", viewDetails, false);
 
-function shareEvent() {
-  let share_with_username = document.getElementById("share_username").value;
-  let event_id = document.getElementById("display_id").innerHTML;
-
-  //connect to php and send variables
-
-  const data = {
-    event_id: event_id,
-    share_user: share_with_username,
-    token: csrf_token, //csrf token
-  };
-
-  fetch("shareevent.php", {
-    method: "POST",
-    body: JSON.stringify(data),
-    headers: { "content-type": "application/json" },
-  })
-    .then((response) => response.json())
-    .then(function (data) {
-      console.log(data.message);
-      updateCalendar();
-    })
-    .catch((err) => console.error(err));
+function viewDetails() {
+  console.log("view details modules");
 }
+*/

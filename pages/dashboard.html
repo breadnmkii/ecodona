@@ -7,27 +7,60 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="nav">
+    <div class="side-nav">
       <ul>
-        <a href = "dashboard.html">Dashboard</li>
-        <a href = "#" >Upload Receipt</li>
-        <a href = "#">Donate Donut</a>
-        <a href = "#">My Rewards</li>
-        <a href = "#">Account</li>
+        <li>
+          <a href = "dashboard.html"><h5>Dashboard</h5></a>
+        </li>
+        <li>
+          <a href = "#" ><h5>Upload Receipts</h5></a>
+        </li>
+        <li>
+          <a href = "#"><h5>Donate Donuts</h5></a>
+        </li>
+        <li>
+          <a href = "#"><h5>My Rewards</h5></a>
+        </li>
+        <li>
+          <a href = "PHP/profile.php"><h5>Profile</h5></a>
+        </li>
       </ul>
     </div>
 
     <div id="donation-cards">
     </div>
 
-    <div id="total-donations">
 
+    <div id="donut-balance">
+
+    </div>
+
+    <div id="total-donations">
+        <p> $1,234,567,890 </p>
+        <p> This is how much money our community has raised for charity! </p>
     </div>
 
     <div id="leaderboard">
-
+        <h2>Leaderboard</h2>
+        <ul>
+            <li>
+                <div class="leaderboard_num">1</div>
+            </li>
+            <li>
+                <div class="leaderboard_num">2</div>
+            </li>
+            <li>
+                <div class="leaderboard_num">3</div>
+            </li>
+            <li>
+                <div class="leaderboard_num">4</div>
+            </li>
+            <li>
+                <div class="leaderboard_num">5</div>
+            </li>
+        </ul>
     </div>
 
-
+    <script src="../js/dashboard.js"></script>
   </body>
 </html>
