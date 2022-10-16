@@ -193,6 +193,7 @@ h6{
     border-radius: 30px;
     border: solid black;
     background-color: black;
+    margin: 5px;
     padding: 16px 32px 16px 32px;
 }
 
@@ -200,6 +201,8 @@ h6{
     border-radius: 15.3px;
     border: solid #566B51;
     background: #566B51;
+    color: white;
+    margin: 5px;
     padding: 8px;
 }
 
@@ -212,7 +215,8 @@ h6{
 
 .secondarygr{
     border-radius: 15.3px;
-    border: solid #566B51;
+    border: solid 2px #566B51;
+    color: #566B51;
     background-color: rgba(0,0,0,0);
     padding: 8.16px;
 }
