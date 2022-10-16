@@ -1,6 +1,5 @@
 <?php
     // Check if user logged in
-    require 'helper/loginchecker.php';
     session_destroy();
 ?>
 
