@@ -4,14 +4,14 @@ session_start(); //starts the user session
 
 //$user = "";
 
-if (isset($_POST['username']) and isset($_POST['password'])) { //checks if the username is not null
+if (isset($_POST['email']) and isset($_POST['password'])) { //checks if the username is not null
     // $user = $_POST['user'];
     // $pass = $_POST['pass'];
     // Use a prepared statement
-    $stmt = $mysqli->prepare("SELECT COUNT(*), userid, hashpass FROM users WHERE userid=?");
+    $stmt = $mysqli->prepare("SELECT COUNT(*), userid, hashpass FROM users WHERE userid=?"); //recheck the users database
 
     // Bind the parameter
-    $user = $_POST['username'];
+    $email = $_POST['email'];
     $stmt->bind_param('s', $user);
     $stmt->execute();
 
@@ -27,6 +27,8 @@ if (isset($_POST['username']) and isset($_POST['password'])) { //checks if the u
         $_SESSION['user'] = $user_name;
         $_SESSION['token'] = bin2hex(random_bytes(32));
         // Redirect to your target page
+        //send the session variables to the js file
+
 
         header("Location: dashboard.html");
     } else {
