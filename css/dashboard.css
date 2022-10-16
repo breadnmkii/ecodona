@@ -1,17 +1,15 @@
+/*
 body{
     background-color: #899d84;
 }
 
 #dashboard-body {
-  /* display: flex; */
   margin: auto;
   width: 100%;
 }
 
 .side-nav {
-  /* display: inline-block; */
   position: fixed;
-  /* float: left; */
   height: 100%;
   padding-top: 7em;
   padding-left: 2%;
@@ -32,8 +30,6 @@ body{
 #dashboard-middle {
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 5%; */
-  /* float: center; */
   width: 50%;
 }
 
@@ -54,6 +50,7 @@ body{
 .side-nav ul li a {
   text-decoration: none;
 }
+*/
 
 .card {
   background-color: rgb(255, 255, 255, 0.8);
