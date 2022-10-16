@@ -62,7 +62,8 @@ function showDonations() {
 
           //append donor
           let donor_name = document.createTextNode(charity_arr[i]);
-          card.append(donor_name);
+          console.log(donor_name);
+          card.appendChild(donor_name);
 
           //append image
           let img = document.createElement("img");
