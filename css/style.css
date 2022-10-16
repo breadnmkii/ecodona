@@ -102,6 +102,35 @@ h6{
     text-align: left;
 }
 
+.body4{
+    font-size: 31px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+}
+
+.body5{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 63px;
+    letter-spacing: 0em;
+}
+
+.body6{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 53px;
+    letter-spacing: 0em;
+
+}
+
+.body7{
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+}
+
 .body9{
     font-size: 21px;
     font-weight: 500;
@@ -197,17 +226,27 @@ h6{
 }
 
 .signbtn{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
     background-color: #6DAC7F;
     border-radius: 9px;
-    border: solid black;
+    border: solid 1.5px black;
     padding: 16px 31px 16px 31px;
 }
 
 .bigsignbtn{
     background-color: #6DAC7F;
     border-radius: 9px;
-    border: solid black;
+    border: solid 2px black;
     padding: 16px 31px 16px 31px;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
 }
 
 .roundbtn{
