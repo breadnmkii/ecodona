@@ -66,3 +66,5 @@ if (isset($_POST['email']) and isset($_POST['password'])) { //checks if the user
 
 //     }
 // }
+
+?>
