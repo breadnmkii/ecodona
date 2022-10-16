@@ -85,11 +85,24 @@ function showDonations() {
           card.appendChild(btn);
 
           //append total rewards
+          const rewards_div = document.createElement("div");
+
+          const ecodona_icon = document.createElement("img");
+          ecodona_icon.src = "../images/icons/ecodona_icon.svg";
+
+          ecodona_icon.classList.add("rewards_icon");
+
           const rewards_node = document.createElement("h7");
           const rewards_textnode = document.createTextNode(reward_arr[i]);
           rewards_node.appendChild(rewards_textnode);
-          card.appendChild(rewards_node);
+          
+          rewards_div.appendChild(ecodona_icon);
+          rewards_div.appendChild(rewards_node);
 
+          
+
+          card.append(rewards_div);
+          
           //append card to donation containera
           donation_container.append(card);
         }
