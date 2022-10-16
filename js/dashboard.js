@@ -2,7 +2,7 @@
 let logged_in = false;
 //checks if user is logged in everytime script loads (prevent logout on refresh)
 function check_login() {
-  fetch("./PHP/login.php", {
+  fetch("../pages/PHP/login.php", {
     method: "POST",
     body: JSON.stringify(),
     headers: { "content-type": "application/json" },
@@ -36,7 +36,7 @@ function showDonations() {
   let charity_arr, total_arr, group_share_arr;
 
   //get arrays with all events stored
-  fetch("PHP/dashboard.php", {
+  fetch("../pages/PHP/getDashboardData.php", {
     method: "POST",
     body: JSON.stringify(),
     headers: { "content-type": "application/json" },
@@ -44,18 +44,24 @@ function showDonations() {
     .then((response) => response.json())
     .then(function (data) {
       if (data.success) {
-        charity_arr = data.eventid_arr;
-        reward_arr = data.eventdate_arr;
-        donut_balance_arr = data.group_share_arr;
+        console.log(data.message);
+
+        charity_arr = data.charityNames;
+        reward_arr = data.charityDonuts;
+        donut_balance_arr = data.donutBalance;
       
         //create card for each donation
         let donation_container = document.getElementById("donation-cards");
         for (let i = 0; i < eventdate_arr.length; i++) {
           let card = document.createElement("div").classList.add("card");
-          let donor_name = document.createTextNode(donationname_arr[i]);
+
+          //append donor
+          let donor_name = document.createTextNode(charity_arr[i]);
           card.appendChild(donor_name);
 
-          var img = document.createElement("img");
+          //append image
+          let img = document.createElement("img");
+          let reward_data = document.createTextNode(reward_arr[i]);
 
           if (reward_data <= 24) {
             img.src = "images/reward_images/level0.jpeg";
@@ -70,6 +76,12 @@ function showDonations() {
           } else {
             img.src = "images/reward_images/level5.jpeg";
           }
+
+          card.appendChild(img);
+
+          //append donut balance
+          let donut_balance = document.createTextNode(donut_balance_arr[i]);
+          card.appendChild(donut_balance);
 
           donation_container.append(card);
         }
