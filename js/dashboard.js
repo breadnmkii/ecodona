@@ -85,7 +85,7 @@ function showDonations() {
           card.appendChild(btn);
 
           //append total rewards
-          const rewards_node = document.createElement("h6");
+          const rewards_node = document.createElement("h7");
           const rewards_textnode = document.createTextNode(reward_arr[i]);
           rewards_node.appendChild(rewards_textnode);
           card.appendChild(rewards_node);
