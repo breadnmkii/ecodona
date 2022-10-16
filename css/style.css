@@ -173,7 +173,7 @@ h6{
 }
 
 .secondaryblk{
-    border-radius: 18.72px
+    border-radius: 18.72px;
     border: solid black;
     padding: 7px 27px 7px 27px;
 }
@@ -186,7 +186,6 @@ h6{
 
 .signbtn-round{
     background-color: #6B8465;
-;
 }
 
 .svchange{
