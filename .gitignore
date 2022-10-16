@@ -1,6 +1,7 @@
 # venv
-ecodona-env
 ecodona-env/*
+ecodona_env/*
+Pipfile*
 
 # MacOS Specific
 .DS_Store
