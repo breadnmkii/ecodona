@@ -25,7 +25,7 @@
     $stmt->bind_param('i', $user_id);
     $stmt->execute();
 
-    $stmt->bind_result($db_charityName, $db_charityDesc, $$db_donutsDonated);
+    $stmt->bind_result($db_charityName, $db_charityDesc, $db_donutsDonated);
 
     while ($stmt->fetch()) {
         array_push($charityNames, htmlentities($db_charityName));
