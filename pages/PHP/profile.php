@@ -114,8 +114,6 @@ $stmt->fetch();
                     <p>
                         Last Name: <?php echo htmlentities($lastname) ?>
                     </p>
-
-                    Last Name: <?php echo htmlentities($lastname) ?>
                 </div>
                 <div class="profile-single-field">
                     <p>
