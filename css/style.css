@@ -59,15 +59,24 @@ h5{
 }
 
 h6{
-
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.25px;
 }
 
-h7{
+.h7{
     font-size: 38px;
     font-weight: 700;
     line-height: 49px;
     letter-spacing: 0em;
 
+}
+
+.h8{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0em;
 }
 
 .body1{
@@ -93,4 +102,60 @@ h7{
     letter-spacing: 0em;
     text-align: left;
 }
+
+.body9{
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+
+}
+
+.body10{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+
+.body11{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0em;
+
+}
+
+.italic{
+    font-size: 21px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+}
+
+.italicgreen{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+}
+
+.italicgreenbig{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+
+}
+
+.tinybutton{
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: 0em;
+}
+
 
