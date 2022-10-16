@@ -6,7 +6,6 @@ font family link for html:
 **/
 
 html{
-    background-color: #899D84;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -157,5 +156,65 @@ h6{
     line-height: 12px;
     letter-spacing: 0em;
 }
+
+.primaryblk{
+    border-radius: 30px;
+    border: solid black;
+    background-color: black;
+    padding: 16px 32px 16px 32px;
+}
+
+.primarygr{
+    border-radius: 15.3px;
+    border: solid #566B51;
+    background: #566B51;
+    padding: 8px;
+}
+
+.secondaryblk{
+    border-radius: 18.72px;
+    border: solid black;
+    background-color: rgba(0,0,0,0);
+    padding: 7px 27px 7px 27px;
+}
+
+.secondarygr{
+    border-radius: 15.3px;
+    border: solid #566B51;
+    background-color: rgba(0,0,0,0);
+    padding: 8.16px;
+}
+
+.signbtn-round{
+    background-color: #6B8465;
+}
+
+.svchange{
+    background-color: #6B8465;
+    border-radius: 12.37px;
+    border: solid #6B8465;
+    padding: 34px 17px 34px 17px;
+}
+
+.signbtn{
+    background-color: #6DAC7F;
+    border-radius: 9px;
+    border: solid black;
+    padding: 16px 31px 16px 31px;
+}
+
+.bigsignbtn{
+    background-color: #6DAC7F;
+    border-radius: 9px;
+    border: solid black;
+    padding: 16px 31px 16px 31px;
+}
+
+.roundbtn{
+    background-color: #6DAC7F;
+    border-radius: 20.74px;
+    border: solid black;
+    padding: 25px 48px 25px 48px;
+} 
 
 
