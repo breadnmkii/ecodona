@@ -70,6 +70,7 @@ body{
 
 #donut-balance-container{
   text-align: center;
+  align-items: center;
 }
 
 #total-donations{
@@ -81,6 +82,8 @@ body{
   justify-content: space-between;
 }
 
-.leaderboard-num{
+.leaderboard_num{
   display: flex;
+  justify-content: space-between;
 }
+
