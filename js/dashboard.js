@@ -58,7 +58,7 @@ function showDonations() {
         
         for (let i = 0; i < charity_arr.length; i++) {
           console.log("making cards");
-          let card = document.createElement("div").classList.add("card");
+          let card = document.createElement("div");
 
           //append donor
           const donor_node = document.createElement("h4");
