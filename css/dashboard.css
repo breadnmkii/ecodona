@@ -52,8 +52,8 @@ body{
 }
 */
 
-#dashboard-middle img {
-  width: 32px;
+.rewards_div img{
+  width: 24px;
 }
 
 .card {
