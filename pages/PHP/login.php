@@ -1,5 +1,5 @@
 <?php
-require '../helper/database.php';
+require 'helper/database.php';
 session_start(); //starts the user session
 $dashboard_redirect = "../dashboard.html";
 $login_redirect = "../login.html";
