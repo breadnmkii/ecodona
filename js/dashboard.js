@@ -53,8 +53,9 @@ function showDonations() {
         //create card for each donation
         for (let i = 0; i < eventdate_arr.length; i++) {
           let card = document.createElement("div").classList.add("card");
-          let donor_name = document.createTextNode(title_arr[i]);
-          event_box.appendChild(event_display);
+          let donor_name = document.createTextNode(donationname_arr[i]);
+          card.appendChild(donor_name);
+          card.appendChild(createLevelSvg(2));
 
           donation_container.append(card);
         }
@@ -64,19 +65,38 @@ function showDonations() {
 }
 
 function createLevelSvg(reward_data) {
+  var svgns = "http://www.w3.org/2000/svg";
+  var container = document.createElementNS(svgns, "SVG");
+  for (var x = 0; x < 500; x += 50) {
+    for (var y = 0; y < 300; y += 50) {
+      var circle = document.createElementNS(svgns, "circle");
+      circle.setAttributeNS(null, "cx", x);
+      circle.setAttributeNS(null, "cy", y);
+      circle.setAttributeNS(null, "r", 50);
+      circle.setAttributeNS(
+        null,
+        "style",
+        "fill: none; stroke: blue; stroke-width: 1px;"
+      );
+      container.appendChild(circle);
+    }
+  }
+
+  /*
   if (reward_data <= 25) {
     return 1;
   } else if (reward_data <= 50) {
     return 2;
-  } else if (reward_data <= 50) {
+  } else if (reward_data <= 75) {
     return 3;
-  } else if (reward_data <= 50) {
+  } else if (reward_data <= 100) {
     return 4;
   } else {
     return 5;
   }
+  */
 
-  return;
+  return container;
 }
 
 /**********************************************************************************************/
