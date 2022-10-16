@@ -59,6 +59,7 @@ function showDonations() {
         for (let i = 0; i < charity_arr.length; i++) {
           console.log("making cards");
           let card = document.createElement("div");
+          card.classList.add("card");
 
           //append donor
           const donor_node = document.createElement("h4");
@@ -71,17 +72,17 @@ function showDonations() {
           let reward_data = document.createTextNode(reward_arr[i]);
 
           if (reward_data <= 24) {
-            img.src = "images/reward_images/level0.jpeg";
+            img.src = "../images/reward_images/level0.jpeg";
           } else if (reward_data <= 49) {
-            img.src = "images/reward_images/level1.jpeg";
+            img.src = "../images/reward_images/level1.jpeg";
           } else if (reward_data <= 74) {
-            img.src = "images/reward_images/level2.jpeg";
+            img.src = "../images/reward_images/level2.jpeg";
           } else if (reward_data <= 99) {
-            img.src = "images/reward_images/level3.jpeg";
+            img.src = "../images/reward_images/level3.jpeg";
           } else if (reward_data <= 499) {
-            img.src = "images/reward_images/level4.jpeg";
+            img.src = "../images/reward_images/level4.jpeg";
           } else {
-            img.src = "images/reward_images/level5.jpeg";
+            img.src = "../images/reward_images/level5.jpeg";
           }
 
           card.appendChild(img);
