@@ -1,8 +1,11 @@
+body{
+    background-color: #899d84;
+}
+
 #dashboard-body {
   /* display: flex; */
   margin: auto;
-  width: 80%;
-  background-color: #899d84;
+  width: 100%;
 }
 
 .side-nav {
@@ -21,6 +24,7 @@
   justify-content: center;
   float: right;
   width: 80%;
+  margin:auto;
 }
 
 #dashboard-middle {
@@ -49,4 +53,6 @@
 
 .card {
   background-color: rgb(255, 255, 255, 0.8);
+  padding: 24px;
+  border-radius: 8px;
 }
