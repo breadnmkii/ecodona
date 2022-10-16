@@ -1,5 +1,10 @@
 /* CSS for webpages with a user view */
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body{
   background-color: #899d84;
 }
@@ -19,6 +24,7 @@ padding-top: 7em;
 padding-left: 2%;
 width: 20%;
 background-color: rgb(255, 255, 255, 0.8);
+box-shadow: 0px 0px 60px 10px rgba(86, 108, 81, 0.9);
 }
 
 .content {
@@ -71,7 +77,41 @@ width: 40%;
 float: right;
 background-color: rgb(255, 255, 255, 0.8);
 padding: 40px;
-border-radius: 50px;
+border-radius: 20%;
+}
+
+
+/* Charity + Rewards CSS */
+.intro {
+  padding-bottom: 50px;
+}
+
+/* Charity CSS */
+
+
+/* Rewards CSS */
+.rewards-wrapper {
+  width: 80%;
+
+}
+
+.reward {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 50px 0px 50px 0px;
+  padding: 25px;
+
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px -10px rgba(86, 108, 81, 0.9);
+}
+
+.reward-arrow {
+  height: 50px;
+  width: 50px;
 }
 
 .profile-card h4, p {
