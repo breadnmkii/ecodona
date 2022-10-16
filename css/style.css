@@ -6,7 +6,6 @@ font family link for html:
 **/
 
 html{
-    background-color: #899D84;
     font-family: 'DM Sans', sans-serif;
 }
 
@@ -175,12 +174,14 @@ h6{
 .secondaryblk{
     border-radius: 18.72px;
     border: solid black;
+    background-color: rgba(0,0,0,0);
     padding: 7px 27px 7px 27px;
 }
 
 .secondarygr{
     border-radius: 15.3px;
     border: solid #566B51;
+    background-color: rgba(0,0,0,0);
     padding: 8.16px;
 }
 

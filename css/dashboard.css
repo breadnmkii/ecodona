@@ -46,3 +46,7 @@
 .side-nav ul li a {
     text-decoration: none;
 }
+
+.card{
+    background-color: rgb(255, 255, 255, 0.8);
+}
