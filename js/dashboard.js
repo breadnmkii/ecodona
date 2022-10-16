@@ -91,7 +91,7 @@ function showDonations() {
         }
 
          //append donut balance
-         let donut_balance_container = document.getElementById("donation-balance");
+         let donut_balance_container = document.getElementById("donut-balance");
          const donut_balance_node = document.createElement("h4");
          const donut_balance_textnode = document.createTextNode(donut_balance);
          donut_balance_node.appendChild(donut_balance_textnode);
