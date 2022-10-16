@@ -1,0 +1,26 @@
+body {
+    display: flex;
+}
+
+.side-nav {
+    /* display: inline-block; */
+    position: fixed;
+    float: left;
+    margin-top: 7em;
+    margin-left: 3%;
+    width: 20%;
+}
+
+#dashboard-right {
+    margin-left: 3%;
+    width: 20%;
+    float: right;
+}
+
+.side-nav ul {
+    list-style-type: none;
+}
+
+.side-nav ul li a {
+    text-decoration: none;
+}

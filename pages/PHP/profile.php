@@ -27,16 +27,36 @@ $stmt->fetch();
 
 <body>
     <!-- eveything needs to be flexed -->
-    <section class="side-nav">
-        <ul>
-            <li>
-                <a href="dashboard.html">Dashboard</a>
-            </li>
-            <a href="#">Upload Receipt</a>
-            <a href="#">Donate Donut</a>
-            <a href="#">My Rewards</a>
-            <a href="#">Account</a>
-        </ul>
+    <section class="side">
+        <div class="side-nav">
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <h5>Dashboard</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>Upload Receipts</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>Donate Donuts</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h5>My Rewards</h5>
+                    </a>
+                </li>
+                <li>
+                    <a href="PHP/profile.php">
+                        <h5>Profile</h5>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
     </section>
     <section id="profile-settings">
