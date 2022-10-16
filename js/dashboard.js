@@ -72,17 +72,17 @@ function showDonations() {
           let reward_data = document.createTextNode(reward_arr[i]);
 
           if (reward_data <= 24) {
-            img.src = "../images/reward_images/level0.jpeg";
+            img.src = "../images/reward_images/level0.png";
           } else if (reward_data <= 49) {
-            img.src = "../images/reward_images/level1.jpeg";
+            img.src = "../images/reward_images/level1.png";
           } else if (reward_data <= 74) {
-            img.src = "../images/reward_images/level2.jpeg";
+            img.src = "../images/reward_images/level2.png";
           } else if (reward_data <= 99) {
-            img.src = "../images/reward_images/level3.jpeg";
+            img.src = "../images/reward_images/level3.png";
           } else if (reward_data <= 499) {
-            img.src = "../images/reward_images/level4.jpeg";
+            img.src = "../images/reward_images/level4.png";
           } else {
-            img.src = "../images/reward_images/level5.jpeg";
+            img.src = "../images/reward_images/level5.png";
           }
 
           card.appendChild(img);
