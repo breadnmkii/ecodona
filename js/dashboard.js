@@ -2,7 +2,7 @@
 let logged_in = false;
 //checks if user is logged in everytime script loads (prevent logout on refresh)
 function check_login() {
-  fetch("check_logged_in.php", {
+  fetch("login.php", {
     method: "POST",
     body: JSON.stringify(),
     headers: { "content-type": "application/json" },
