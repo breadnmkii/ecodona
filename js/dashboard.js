@@ -91,6 +91,7 @@ function showDonations() {
           let btn = document.createElement("button");
           btn.classList.add("secondary_btn");
           btn.innerHTML = "Details";
+          console.log(btn);
           card.appendChild(btn);
 
           //append card to donation containera
