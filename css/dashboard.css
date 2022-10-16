@@ -56,9 +56,22 @@ body{
   width: 24px;
 }
 
+#leaderboard ul{
+  list-style: none;
+}
+
 .card {
   background-color: rgb(255, 255, 255, 0.8);
   padding: 24px;
   border-radius: 8px;
   margin: 12px 0px;
+  box-shadow: 0px 0px 40px -10px rgba(86, 108, 81, 0.9);
+}
+
+#donut-balance-container{
+  text-align: center;
+}
+
+#total-donations{
+  text-align: center;
 }
