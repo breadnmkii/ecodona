@@ -52,7 +52,7 @@ function showDonations() {
       
         //create card for each donation
         let donation_container = document.getElementById("donation-cards");
-        for (let i = 0; i < eventdate_arr.length; i++) {
+        for (let i = 0; i < charity_arr.length; i++) {
           let card = document.createElement("div").classList.add("card");
 
           //append donor
