@@ -1,51 +1,56 @@
-
 <!-- NOTE: login checking must be done via JS-PHP interface now -->
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf8">
-        <title>ecodona - Donate for Good</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css" />
-        <link rel="stylesheet" href="../css/user.css" />
-        <link rel="stylesheet" href="../css/upload.css" />
 
-    </head>
-    <body>
-      <div class="side-nav">
-        <div class="logo">
-          <a href="dashboard.html">ecodona</a>
-        </div>
-        <ul>
-          <li>
-            <a href = "dashboard.html"><h5>Dashboard</h5></a>
-          </li>
-          <li>
-            <a href = "upload.html" ><h5>Upload Receipts</h5></a>
-          </li>
-          <li>
-            <a href = "charity.html"><h5>Donate Donuts</h5></a>
-          </li>
-          <li>
-            <a href = "rewards.html"><h5>My Rewards</h5></a>
-          </li>
-          <li>
-            <a href = "PHP/profile.php"><h5>Profile</h5></a>
-          </li>
-        </ul>
-      </div>
-        <section class="upload-content">
-          <h3>Upload Your Receipt</h3>
-            <div class="upload-wrapper">
-                <img src="../images/icons/upload-icon.png">
-                <p class="body2">We only accept files of the .pdf format.</p>
-                <button type="button" class="secondaryblk">Upload</button>
-                <input type="file" accept="application/pdf">
-            </div>
-        </section>
-        
-    </body>
+<head>
+  <meta charset="utf8">
+  <title>ecodona - Donate for Good</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/user.css" />
+  <link rel="stylesheet" href="../css/upload.css" />
+
+</head>
+
+<body>
+  <div class="side-nav">
+    <div class="logo">
+      <a href="dashboard.html">ecodona</a>
+    </div>
+    <ul>
+      <li>
+        <a href = "dashboard.html"><h5>Dashboard</h5></a>
+      </li>
+      <li>
+        <a href = "upload.html" ><h5>Upload Receipts</h5></a>
+      </li>
+      <li>
+        <a href = "charity.html"><h5>Donate Donuts</h5></a>
+      </li>
+      <li>
+        <a href = "rewards.html"><h5>My Rewards</h5></a>
+      </li>
+      <li>
+        <a href = "PHP/profile.php"><h5>Profile</h5></a>
+      </li>
+    </ul>
+  </div>
+  <section class="upload-content">
+    <h3>Upload Your Receipt</h3>
+    <div class="upload-wrapper">
+      <img src="../images/icons/upload-icon.png">
+      <p class="body2">We only accept files of the .pdf format.</p>
+      <a href="congratulations.html">
+        <button type="button" class="secondaryblk">Upload</button>
+      </a>
+      <input type="file" accept="application/pdf">
+    </div>
+  </section>
+
+</body>
 </html>
