@@ -1,5 +1,9 @@
-body {
+
+#dashboard-body {
     display: flex;
+    margin: auto;
+    /* width: 80%; */
+
 }
 
 .side-nav {
@@ -9,6 +13,20 @@ body {
     margin-top: 7em;
     margin-left: 3%;
     width: 20%;
+}
+
+#content {
+    display: flex;
+}
+
+#dashboard-middle {
+    margin: auto;
+    float: center;
+    width: 60%;
+}
+
+#dashboard-middle img {
+    width: 50%;
 }
 
 #dashboard-right {
