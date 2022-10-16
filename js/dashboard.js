@@ -36,7 +36,7 @@ function showDonations() {
   let charity_arr, total_arr, group_share_arr;
 
   //get arrays with all events stored
-  fetch("dashboard.php", {
+  fetch("PHP/dashboard.php", {
     method: "POST",
     body: JSON.stringify(),
     headers: { "content-type": "application/json" },
