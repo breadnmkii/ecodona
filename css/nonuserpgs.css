@@ -1,29 +1,119 @@
-.nav {
+nav {
     overflow: hidden;
     background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-  }
+}
   
+.wrapper{
+    position: relative;
+    width: 90%;
+    height: 8rem;
+    top: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 92px;
+}
+
   /* Links inside the navbar */
-  .nav a {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
+nav a{
     color: black;
     text-align: center;
     padding: 30px 40px;
     text-decoration: none;
-    font-size: 20px;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+}
   
   /* Change background on mouse-over */
-  .nav a:hover {
-    box-shadow: rgba(50, 50, 93, 0.25) 5px 15px 30px -12px inset, rgba(0, 0, 0, 0.3) 0px 8px 8px -8px inset;
+nav a:active {
+    font-weight: 700;
     color: black;
-  }
+}
+
+
+
+/** homepage**/
+
+.landing{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.landingwords{
+    margin-left: 10rem;
+}
+
+
+.marketingbkg{
+    background-color: #6DAC7F;
+}
+.marketing{
+    width: 80%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.left1{
+    margin-right: 7rem;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.right2{
+    margin-left: 7rem;
+}
+
+.changing{
+    color: #520C0E;
+}
+
+.imgs img{
+    width: 550px;
+}
+
+.join{
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join h2{
+    text-align: center;
+    margin-top: ;
+}
