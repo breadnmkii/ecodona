@@ -25,12 +25,53 @@ $stmt->fetch();
     <!-- style sheet -->
 </head>
 
-<body> 
+<body>
     <!-- eveything needs to be flexed -->
     <section class="side-nav">
+        <ul>
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+            <a href="#">Upload Receipt</a>
+            <a href="#">Donate Donut</a>
+            <a href="#">My Rewards</a>
+            <a href="#">Account</a>
+        </ul>
 
     </section>
     <section id="profile-settings">
+        <div class="profile-card">
+            <h4>
+                Account Setting
+            </h4>
+            <p>
+                Personalize your account
+            </p>
+        </div>
+        <div class="profile-card">
+            <h4>
+                Password and Security
+            </h4>
+            <p>
+                Details about your personal information
+            </p>
+        </div>
+        <div class="profile-card">
+            <h4>
+                Invite a Friend
+            </h4>
+            <p>
+                Recruit friends to raise more
+            </p>
+        </div>
+        <div class="profile-card">
+            <h4>
+                Help Center
+            </h4>
+            <p>
+                View tutorials, Guides, FAQ
+            </p>
+        </div>
 
     </section>
     <section class="profile-info">
@@ -41,15 +82,20 @@ $stmt->fetch();
         </p>
         <div class="profile-single-field">
             <p>
-            Phone Number: <?php echo htmlentities($phone) ?>
+                Phone Number: <?php echo htmlentities($phone) ?>
             </p>
             <p>
-            Email: <?php echo htmlentities($email) ?>
-            </p>
-            <p>
-            Address: <?php echo htmlentities($address) ?>
+                Email: <?php echo htmlentities($email) ?>
             </p>
         </div>
+        <p class="profile-double-field">
+            City: <?php echo htmlentities($city) ?>
+            State: <?php echo htmlentities($state) ?>
+        </p>
+        <p class="profile-double-field">
+            Zip Code: <?php echo htmlentities($city) ?>
+            Country: <?php echo htmlentities($state) ?>
+        </p>
 
     </section>
 </body>
