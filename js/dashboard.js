@@ -95,11 +95,9 @@ function showDonations() {
         }
 
         //append donut balance
-        let donut_balance_container = document.getElementById("donut-balance");
-        const donut_balance_node = document.createElement("h4");
-        const donut_balance_textnode = document.createTextNode(donut_balance);
-        donut_balance_node.appendChild(donut_balance_textnode);
-        donut_balance_container.appendChild(donut_balance_node);
+        let donut_balance_container = document.getElementById("donut-balance-container");
+        const donut_balance_node = document.getElementById("donut-balance");
+        donut_balance_node.innerHTML = donut_balance;
 
         const balance_node = document.createElement("h6");
         const balance_textnode = document.createTextNode("Donut Balance");
