@@ -2,10 +2,10 @@
 
     session_start();
 
-    // The login page
-    $login_redirect = 'login_register.php';
+    // login path
+    $login_redirect = '../../login.html';
 
-    if (!(isset($_SESSION['UserID']) && $_SESSION['UserID'] == true)) {
+    if (!isset($_SESSION['user_id'])) {
         header("Location: $login_redirect");
         exit;
     }
