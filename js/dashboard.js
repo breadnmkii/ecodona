@@ -47,6 +47,8 @@ function showDonations() {
         charity_arr = data.charityNames;
         reward_arr = data.charityDonuts;
         donut_balance_arr = data.donutBalance;
+        
+        console.log(data.message);
         console.log(charity_arr);
         console.log(reward_arr);
         console.log(donut_balance_arr);
