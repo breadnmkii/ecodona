@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 nav {
     overflow: hidden;
     background-color: white;
@@ -44,7 +48,43 @@ nav a:active {
     color: black;
 }
 
+footer{
+    background-color: #6DAC7F;
+    color: white;
+    width: 100%;
+    position: relative;
+    margin: 0;
+}
 
+.footercontent{
+    width: 80%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+}
+
+.right img{
+    width: 25.54px;
+    filter: invert(100%) sepia(4%) saturate(314%) hue-rotate(253deg) brightness(115%) contrast(100%);
+    padding-right: 33px;
+}
 
 /** homepage**/
 
@@ -59,6 +99,11 @@ nav a:active {
     margin-right: auto;
 }
 
+.landingwords button{
+    margin-left: 35%;
+    margin-right: 38%;
+    margin-top: 2rem;
+}
 .landingwords{
     margin-left: 10rem;
 }
@@ -78,7 +123,7 @@ nav a:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 10rem;
+    padding-top: 20rem;
     padding-bottom: 10rem;
 }
 
@@ -91,7 +136,7 @@ nav a:active {
     justify-content: space-between;
     align-items: center;
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 20rem;
 }
 
 .right2{
@@ -107,13 +152,20 @@ nav a:active {
 }
 
 .join{
-    width: 80%;
+    width: 60%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
 }
 
 .join h2{
     text-align: center;
-    margin-top: ;
+    margin-bottom: 5rem;
 }
+
+.join p{
+    margin: 5rem;
+}
+
