@@ -1,36 +1,40 @@
 
 #dashboard-body {
-    display: flex;
+    /* display: flex; */
     margin: auto;
-    /* width: 80%; */
+    width: 80%;
 
 }
 
 .side-nav {
     /* display: inline-block; */
     position: fixed;
-    float: left;
+    /* float: left; */
     margin-top: 7em;
-    margin-left: 3%;
+    margin-left: 2%;
     width: 20%;
 }
 
 #content {
-    display: flex;
+    flex-direction: row;
+    display: inline-flex;
+    justify-content: center;
+    float: right;
+    width: 80%;
 }
 
 #dashboard-middle {
     margin: auto;
     float: center;
-    width: 60%;
-}
-
-#dashboard-middle img {
     width: 50%;
 }
 
+#dashboard-middle img {
+    width: 60%;
+}
+
 #dashboard-right {
-    margin-left: 3%;
+    margin-right: 10%;
     width: 20%;
     float: right;
 }
