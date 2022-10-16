@@ -78,4 +78,9 @@ body{
 
 #donut-balance-and-icon{
   display: flex;
+  justify-content: space-between;
+}
+
+.leaderboard-num{
+  display: flex;
 }
