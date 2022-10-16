@@ -41,27 +41,32 @@ $stmt->fetch();
             <div class="side-nav">
                 <ul>
                     <li>
-                        <a href="../dashboard.html">
+                        <img src="../images/icons/user-dashboard.png">
+                        <a href="dashboard.html">
                             <h5>Dashboard</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <img src="../images/icons/user-upload.png">
+                        <a href="upload.html">
                             <h5>Upload Receipts</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <img src="../images/icons/user-donate.png">
+                        <a href="charity.html">
                             <h5>Donate Donuts</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <img src="../images/icons/user-award.png">
+                        <a href="rewards.html">
                             <h5>My Rewards</h5>
                         </a>
                     </li>
                     <li>
-                        <a href="profile.php">
+                        <img src="../images/icons/user-profile.png">
+                        <a href="PHP/profile.php">
                             <h5>Profile</h5>
                         </a>
                     </li>
