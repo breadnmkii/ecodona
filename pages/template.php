@@ -1,8 +1,7 @@
 <?php
     require 'helper/database.php';
     # require 'helper/logincheck.php;       # if page is login-guarded
-    # require_ocne 'helper/<php_function_package>.php;      # for importing any php helper function files
-
+    # require_once 'helper/<php_function_package>.php;      # for importing any php helper function files
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +12,15 @@
     </head>
     <body>
         <nav>
-            
+            <a href="homepage.php">
+                <img id="logo" src="TODO: logo.img">
+            </a>
+            <div class="navlinks">
+                <a href="TODO: overview">Overview</a>
+                <a href="TODO: howitworks">How It Works</a>
+                <a href="TODO: taxdeduction">Tax Deduction</a>
+            </div>
+            <input type="button" id="signin-button" value="Sign In">
         </nav>
         <section>
 
