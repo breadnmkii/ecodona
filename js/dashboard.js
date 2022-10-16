@@ -89,7 +89,7 @@ function showDonations() {
 
           //append Details button
           let btn = document.createElement("button");
-          btn.classList.add("secondary_btn");
+          btn.classList.add("secondaryblk");
           btn.innerHTML = "Details";
           console.log(btn);
           card.appendChild(btn);
