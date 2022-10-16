@@ -47,7 +47,7 @@ function showDonations() {
         charity_arr = data.charityNames;
         reward_arr = data.charityDonuts;
         donut_balance_arr = data.donutBalance;
-        
+
         console.log(data.message);
         console.log(charity_arr);
         console.log(reward_arr);
@@ -62,7 +62,7 @@ function showDonations() {
 
           //append donor
           let donor_name = document.createTextNode(charity_arr[i]);
-          card.appendChild(donor_name);
+          card.append(donor_name);
 
           //append image
           let img = document.createElement("img");
