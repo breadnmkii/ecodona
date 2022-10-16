@@ -337,3 +337,52 @@ li{
     align-items: center; 
     margin-right: 5rem;
 }
+
+
+/** sigin in **/
+
+.content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-top: 15rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lefttext{
+    margin-right: 5rem;
+}
+.lefttext p{
+    color: #797878;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+.lefttext a{
+    color: black;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+input{
+    width: 600px;
+    height: 70px;
+    border-radius: 30px;
+    margin-bottom: 2rem;
+    border: none;
+    background: #F6F6F6;
+    padding-left: 4rem;
+
+    color: #979797;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+
+

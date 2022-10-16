@@ -1,5 +1,13 @@
 /* CSS for upload page */
 
+/* input[type=file] {
+    border-radius: 18.72px;
+    border: solid black;
+    background-color: rgba(0,0,0,0);
+    padding: 7px 27px 7px 27px;
+
+} */
+
 .upload-content {
     justify-content: center;
     width: 50%;
