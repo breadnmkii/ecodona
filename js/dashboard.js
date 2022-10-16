@@ -10,10 +10,8 @@ function check_login() {
     .then((response) => response.json())
     .then(function (data) {
       if (data.success) {
-        console.log("logged in");
         updateDashboard;
       } else {
-        console.log("not logged in");
       }
     })
     .catch((error) => console.error("Error:", error));
@@ -32,7 +30,6 @@ function updateDashboard() {
 /***  showDonations(): shows all donations on the dashboard                                        ***/
 /*****************************************************************************************************/
 function showDonations() {
-  console.log("show donations");
   let charity_arr, total_arr, group_share_arr;
 
   //get arrays with all events stored
@@ -48,16 +45,10 @@ function showDonations() {
         reward_arr = data.charityDonuts;
         donut_balance = data.donutBalance;
 
-        console.log(data.message);
-        console.log(charity_arr);
-        console.log(reward_arr);
-        console.log(donut_balance);
-
         //create card for each donation
         let donation_container = document.getElementById("donation-cards");
 
         for (let i = 0; i < charity_arr.length; i++) {
-          console.log("making cards");
           let card = document.createElement("div");
           card.classList.add("card");
 
@@ -91,7 +82,6 @@ function showDonations() {
           let btn = document.createElement("button");
           btn.classList.add("secondaryblk");
           btn.innerHTML = "Details";
-          console.log(btn);
           card.appendChild(btn);
 
           //append card to donation containera
