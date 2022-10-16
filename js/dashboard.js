@@ -98,10 +98,6 @@ function showDonations() {
         let donut_balance_container = document.getElementById("donut-balance-container");
         const donut_balance_node = document.getElementById("donut-balance");
         donut_balance_node.innerHTML = donut_balance;
-
-        const balance_node = document.createElement("h6");
-        balance_node.appendChild(balance_textnode);
-        donut_balance_container.appendChild(balance_node);
       }
     })
     .catch((err) => console.error(err));
