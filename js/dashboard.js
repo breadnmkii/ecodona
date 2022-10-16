@@ -61,9 +61,10 @@ function showDonations() {
           let card = document.createElement("div").classList.add("card");
 
           //append donor
-          let donor_name = document.createTextNode(charity_arr[i]);
-          console.log(donor_name);
-          card.appendChild(donor_name);
+          const donor_node = document.createElement("h4");
+          const donor_textnode = document.createTextNode(charity_arr[i]);
+          donor_node.appendChild(donor_textnode);
+          card.appendChild(donor_node);
 
           //append image
           let img = document.createElement("img");
