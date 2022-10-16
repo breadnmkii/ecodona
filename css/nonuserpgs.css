@@ -169,3 +169,64 @@ footer{
     margin: 5rem;
 }
 
+/** education pg **/
+
+#educate{
+    width: 60%;
+    text-align: center;
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20rem;
+}
+
+.intro p{
+    margin-left: 4rem;
+}
+
+.info2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20rem;
+}
+
+.info2 h2{
+    margin-bottom: 1rem;
+}
+
+ul{
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li{
+    font-size: 31px;
+    font-weight: 500;
+    line-height: 45px;
+    letter-spacing: 0em;
+    margin-bottom: 2rem;
+}
+
+.info3{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20rem;
+}
+
+.info3 h2{
+    margin-bottom: 1rem;
+}
+
