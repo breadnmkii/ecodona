@@ -27,6 +27,17 @@ background-color: rgb(255, 255, 255, 0.8);
 box-shadow: 0px 0px 60px 10px rgba(86, 108, 81, 0.9);
 }
 
+.logo {
+  margin-bottom: 40px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  padding: 20px;
+}
+
 .side-nav ul {
   display: flex;
   flex-direction: column;
@@ -38,9 +49,9 @@ box-shadow: 0px 0px 60px 10px rgba(86, 108, 81, 0.9);
   align-items: center;
   justify-content: space-between;
   
-  margin: 20px;
-  padding: 20px;
-  background-color: #6B8465;
+  margin: 10px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
+  
   border-radius: 10px;
 }
 
@@ -109,7 +120,37 @@ border-radius: 20%;
 }
 
 /* Charity CSS */
+.charities-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 15%;
+}
 
+.charity-cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.charity-card {
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 30px;
+  margin: 20px;
+  width: 350px;
+  height: 350px;
+
+  box-shadow: 0px 0px 40px -10px rgba(86, 108, 81, 0.9);
+}
+
+
+
+.card-img img {
+  width: 350px;
+}
+
+.card-content {
+  padding: 35px;
+}
 
 /* Rewards CSS */
 .rewards-wrapper {
