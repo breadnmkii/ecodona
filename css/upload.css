@@ -13,7 +13,7 @@
     width: 50%;
     margin: auto;
     margin-top: 0;
-    padding-left: 30%;
+    padding-left: 25%;
     padding-top: 100px;
     /* text-align: center; */
 }
@@ -28,7 +28,18 @@
     padding: 40px;
 
 }
+.f1{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.upload-content p{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.f1 input{
+    width: 200px;
+}
 
-.upload-wrapper > * { 
-    margin-bottom: 20px;
+.f2 button{
+    width: 136px;
 }

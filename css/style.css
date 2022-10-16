@@ -189,9 +189,15 @@ h6{
 .primaryblk{
     border-radius: 30px;
     border: solid black;
+    color: white;
     background-color: black;
     margin: 5px;
     padding: 16px 32px 16px 32px;
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
 }
 
 .primarygr{
