@@ -37,9 +37,6 @@ margin-right: auto;
 width: 50%;
 }
 
-#dashboard-middle img {
-width: 60%;
-}
 
 #dashboard-right {
 margin-right: 5%;
@@ -75,4 +72,13 @@ float: right;
 background-color: rgb(255, 255, 255, 0.8);
 padding: 40px;
 border-radius: 100px;
+}
+
+.profile-card h4, p {
+  margin: 0;
+  /* margin-bottom: 20px; */
+}
+
+.profile h4 {
+  margin-bottom: 16px
 }
