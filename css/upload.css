@@ -1,6 +1,26 @@
 /* CSS for upload page */
 
+.upload-content {
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: 0;
+    padding-left: 30%;
+    padding-top: 100px;
+    /* text-align: center; */
+}
 .upload-wrapper {
+    margin-top: 40px;
+    text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
+    border-style: solid;
+    border-color: rgb(52, 69, 23);
+    border-width: 5px;
     border-radius: 20px;
+    padding: 40px;
+
+}
+
+.upload-wrapper > * { 
+    margin-bottom: 20px;
 }
