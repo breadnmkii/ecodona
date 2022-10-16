@@ -175,12 +175,14 @@ h6{
 .secondaryblk{
     border-radius: 18.72px;
     border: solid black;
+    background-color: none;
     padding: 7px 27px 7px 27px;
 }
 
 .secondarygr{
     border-radius: 15.3px;
     border: solid #566B51;
+    background-color: none;
     padding: 8.16px;
 }
 
