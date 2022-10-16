@@ -5,7 +5,7 @@ $user_id = htmlentities($_SESSION['user_id']); //get the userid
 
 //i wanna kill myself
 //arrays to store the information -- charity-name, total-charity-sum, 
-$stmt = $mysqli->prepare("UserId, Firstname, Lastname, Email, Phone, Country, State, City, Street, Postal, DonutBalance FROM UserInfo WHERE UserId=?"); //recheck the users database
+$stmt = $mysqli->prepare("SELECT UserID, Firstname, Lastname, Email, Phone, Country, State, City, Street, Postal, DonutBalance FROM UserInfo WHERE UserID=?"); //recheck the users database
 
 // Bind the parameter
 $stmt->bind_param('i', $user_id);
