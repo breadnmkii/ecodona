@@ -47,7 +47,7 @@ h4{
     font-weight: 700;
     line-height: 31px;
     letter-spacing: 0em;
-
+    margin: 0px;
 }
 
 h5{
@@ -61,6 +61,7 @@ h6{
     font-size: 24px;
     font-weight: 500;
     line-height: 31.25px;
+    margin: 0px;
 }
 
 .h7{

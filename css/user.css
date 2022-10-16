@@ -1,15 +1,19 @@
-/*
+/* CSS for webpages with a user view */
+
 body{
     background-color: #899d84;
 }
 
-#dashboard-body {
+.content-body {
+  /* display: flex; */
   margin: auto;
   width: 100%;
 }
 
 .side-nav {
+  /* display: inline-block; */
   position: fixed;
+  /* float: left; */
   height: 100%;
   padding-top: 7em;
   padding-left: 2%;
@@ -17,7 +21,7 @@ body{
   background-color: rgb(255, 255, 255, 0.8);
 }
 
-#content {
+.content {
   flex-direction: row;
   display: inline-flex;
   justify-content: center;
@@ -27,7 +31,7 @@ body{
   margin-top: 5%;
 }
 
-#dashboard-middle {
+#dashboard-middle, #profile-settings {
   margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -50,11 +54,25 @@ body{
 .side-nav ul li a {
   text-decoration: none;
 }
-*/
 
-.card {
+#profile-settings {
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#profile-settings > * {
+  background-color: rgba(191, 191, 191, 0.8);
+  padding: 40px;
+  border-radius: 20%;
+  margin-bottom: 20px;
+}
+
+.profile-info {
+  margin-right: 5%;
+  width: 40%;
+  float: right;
   background-color: rgb(255, 255, 255, 0.8);
-  padding: 24px;
-  border-radius: 8px;
-  margin: 12px 0px;
+  padding: 40px;
+  border-radius: 20%;
 }

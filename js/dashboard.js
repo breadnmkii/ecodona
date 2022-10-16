@@ -10,10 +10,8 @@ function check_login() {
     .then((response) => response.json())
     .then(function (data) {
       if (data.success) {
-        console.log("logged in");
         updateDashboard;
       } else {
-        console.log("not logged in");
       }
     })
     .catch((error) => console.error("Error:", error));
@@ -32,7 +30,6 @@ function updateDashboard() {
 /***  showDonations(): shows all donations on the dashboard                                        ***/
 /*****************************************************************************************************/
 function showDonations() {
-  console.log("show donations");
   let charity_arr, total_arr, group_share_arr;
 
   //get arrays with all events stored
@@ -48,16 +45,10 @@ function showDonations() {
         reward_arr = data.charityDonuts;
         donut_balance = data.donutBalance;
 
-        console.log(data.message);
-        console.log(charity_arr);
-        console.log(reward_arr);
-        console.log(donut_balance);
-
         //create card for each donation
         let donation_container = document.getElementById("donation-cards");
 
         for (let i = 0; i < charity_arr.length; i++) {
-          console.log("making cards");
           let card = document.createElement("div");
           card.classList.add("card");
 
@@ -91,24 +82,22 @@ function showDonations() {
           let btn = document.createElement("button");
           btn.classList.add("secondaryblk");
           btn.innerHTML = "Details";
-          console.log(btn);
           card.appendChild(btn);
+
+          //append total rewards
+          const rewards_node = document.createElement("h7");
+          const rewards_textnode = document.createTextNode(reward_arr[i]);
+          rewards_node.appendChild(rewards_textnode);
+          card.appendChild(rewards_node);
 
           //append card to donation containera
           donation_container.append(card);
         }
 
         //append donut balance
-        let donut_balance_container = document.getElementById("donut-balance");
-        const donut_balance_node = document.createElement("h4");
-        const donut_balance_textnode = document.createTextNode(donut_balance);
-        donut_balance_node.appendChild(donut_balance_textnode);
-        donut_balance_container.appendChild(donut_balance_node);
-
-        const balance_node = document.createElement("h6");
-        const balance_textnode = document.createTextNode("Donut Balance");
-        balance_node.appendChild(balance_textnode);
-        donut_balance_container.appendChild(balance_node);
+        let donut_balance_container = document.getElementById("donut-balance-container");
+        const donut_balance_node = document.getElementById("donut-balance");
+        donut_balance_node.innerHTML = donut_balance;
       }
     })
     .catch((err) => console.error(err));

@@ -6,79 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
-
-
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/user.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
   <body>
-    <div id="dashboard-body">
+    <div class="content-body">
+      <div class="side-nav">
+        <ul>
+          <li>
+            <a href = "dashboard.html"><h5>Dashboard</h5></a>
+          </li>
+          <li>
+            <a href = "upload.html" ><h5>Upload Receipts</h5></a>
+          </li>
+          <li>
+            <a href = "#"><h5>Donate Donuts</h5></a>
+          </li>
+          <li>
+            <a href = "#"><h5>My Rewards</h5></a>
+          </li>
+          <li>
+            <a href = "PHP/profile.php"><h5>Profile</h5></a>
+          </li>
+        </ul>
+      </div>
 
-    
-    <div class="side-nav">
-      <ul>
-        <li>
-          <a href = "dashboard.html"><h5>Dashboard</h5></a>
-        </li>
-        <li>
-          <a href = "#" ><h5>Upload Receipts</h5></a>
-        </li>
-        <li>
-          <a href = "#"><h5>Donate Donuts</h5></a>
-        </li>
-        <li>
-          <a href = "#"><h5>My Rewards</h5></a>
-        </li>
-        <li>
-          <a href = "PHP/profile.php"><h5>Profile</h5></a>
-        </li>
-      </ul>
-    </div>
+      <div class="content">
+        <section id="dashboard-middle">
+          <div id="donation-cards"></div>
+        </section>
 
-    <div id="content">
-      <section id="dashboard-middle">
-        <div id="donation-cards">
-        </div>
-      </section>
+        <section id="dashboard-right">
+          <div id="donut-balance-container" class="card">
+            <div>
+              <img src="../images/icons/ecodona_icon.svg">
+              <h4 id = "donut-balance"></h4>
+            </div>
+            <h6>Donut Balance</h6>
+          </div>
 
-      <section id="dashboard-right">
-  
-        <div id="donut-balance" class = "card">
-          
-        </div>
-    
-        <div id="total-donations" class = "card">
-            <p> $1,234,567,890 </p>
-            <p> This is how much money our community has raised for charity! </p>
-        </div>
-    
-        <div id="leaderboard" class = "card">
-            <h2>Leaderboard</h2>
+          <div id="total-donations" class="card">
+            <p>$1,234,567,890</p>
+            <p>This is how much money our community has raised for charity!</p>
+          </div>
+
+          <div id="leaderboard" class="card">
+            <h4>Leaderboard</h4>
             <ul>
-                <li>
-                    <div class="leaderboard_num">1</div>
-                </li>
-                <li>
-                    <div class="leaderboard_num">2</div>
-                </li>
-                <li>
-                    <div class="leaderboard_num">3</div>
-                </li>
-                <li>
-                    <div class="leaderboard_num">4</div>
-                </li>
-                <li>
-                    <div class="leaderboard_num">5</div>
-                </li>
+              <li>
+                <div class="leaderboard_num">1</div>
+              </li>
+              <li>
+                <div class="leaderboard_num">2</div>
+              </li>
+              <li>
+                <div class="leaderboard_num">3</div>
+              </li>
+              <li>
+                <div class="leaderboard_num">4</div>
+              </li>
+              <li>
+                <div class="leaderboard_num">5</div>
+              </li>
             </ul>
-        </div>
-  
-      </section>
+          </div>
+        </section>
+      </div>
     </div>
 
-  </div>
-
-  
     <script src="../js/dashboard.js"></script>
   </body>
 </html>
