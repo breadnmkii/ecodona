@@ -19,6 +19,7 @@ width: 100%;
 /* display: inline-block; */
 position: fixed;
 /* float: left; */
+top: 0;
 height: 100%;
 padding-top: 7em;
 padding-left: 2%;
