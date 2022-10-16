@@ -46,12 +46,12 @@ function showDonations() {
       if (data.success) {
         charity_arr = data.charityNames;
         reward_arr = data.charityDonuts;
-        donut_balance_arr = data.donutBalance;
+        donut_balance = data.donutBalance;
 
         console.log(data.message);
         console.log(charity_arr);
         console.log(reward_arr);
-        console.log(donut_balance_arr);
+        console.log(donut_balance);
       
         //create card for each donation
         let donation_container = document.getElementById("donation-cards");
@@ -87,16 +87,16 @@ function showDonations() {
 
           card.appendChild(img);
 
-          //append donut balance
-          let donut_balance = document.createTextNode(donut_balance_arr[i]);
-          card.appendChild(donut_balance);
-
           donation_container.append(card);
         }
 
+         //append donut balance
+         let donut_balance_container = document.getElementById("donation-balance");
+         const donut_balance_node = document.createElement("h4");
+         const donut_balance_textnode = document.createTextNode(donut_balance);
+         donut_balance_node.appendChild(donut_balance_textnode);
+         donut_balance_container.appendChild(donor_node);
 
-        //create card for total balance
-        let balance_container = document.getElementById("donut-balance");
       }
     })
     .catch((err) => console.error(err));
