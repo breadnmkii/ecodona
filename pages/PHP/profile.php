@@ -24,13 +24,16 @@ $stmt->fetch();
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Profile</title>
-        <link rel="stylesheet" href="../css/style.css">
-    </head>
+<head>
+    <title>Profile</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/user.css">
 
-    <body>
-        <!-- eveything needs to be flexed -->
+</head>
+
+<body>
+    <!-- eveything needs to be flexed -->
+    <div class="content-body">
         <section class="side">
             <div class="side-nav">
                 <ul>
@@ -63,65 +66,68 @@ $stmt->fetch();
             </div>
 
         </section>
-        <section id="profile-settings">
-            <div class="profile-card">
-                <h4>
-                    Account Setting
-                </h4>
-                <p>
-                    Personalize your account
-                </p>
-            </div>
-            <div class="profile-card">
-                <h4>
-                    Password and Security
-                </h4>
-                <p>
-                    Details about your personal information
-                </p>
-            </div>
-            <div class="profile-card">
-                <h4>
-                    Invite a Friend
-                </h4>
-                <p>
-                    Recruit friends to raise more
-                </p>
-            </div>
-            <div class="profile-card">
-                <h4>
-                    Help Center
-                </h4>
-                <p>
-                    View tutorials, Guides, FAQ
-                </p>
-            </div>
+        <div class="content">
+            <section id="profile-settings">
+                <div class="profile-card">
+                    <h4>
+                        Account Setting
+                    </h4>
+                    <p>
+                        Personalize your account
+                    </p>
+                </div>
+                <div class="profile-card">
+                    <h4>
+                        Password and Security
+                    </h4>
+                    <p>
+                        Details about your personal information
+                    </p>
+                </div>
+                <div class="profile-card">
+                    <h4>
+                        Invite a Friend
+                    </h4>
+                    <p>
+                        Recruit friends to raise more
+                    </p>
+                </div>
+                <div class="profile-card">
+                    <h4>
+                        Help Center
+                    </h4>
+                    <p>
+                        View tutorials, Guides, FAQ
+                    </p>
+                </div>
 
-        </section>
-        <section class="profile-info">
+            </section>
+            <section class="profile-info">
 
-            <p class="profile-double-field">
-                First Name: <?php echo htmlentities($firstname) ?>
-                Last Name: <?php echo htmlentities($lastname) ?>
-            </p>
-            <div class="profile-single-field">
-                <p>
-                    Phone Number: <?php echo htmlentities($phone) ?>
+                <p class="profile-double-field">
+                    First Name: <?php echo htmlentities($firstname) ?>
+                    Last Name: <?php echo htmlentities($lastname) ?>
                 </p>
-                <p>
-                    Email: <?php echo htmlentities($email) ?>
+                <div class="profile-single-field">
+                    <p>
+                        Phone Number: <?php echo htmlentities($phone) ?>
+                    </p>
+                    <p>
+                        Email: <?php echo htmlentities($email) ?>
+                    </p>
+                </div>
+                <p class="profile-double-field">
+                    City: <?php echo htmlentities($city) ?>
+                    State: <?php echo htmlentities($state) ?>
                 </p>
-            </div>
-            <p class="profile-double-field">
-                City: <?php echo htmlentities($city) ?>
-                State: <?php echo htmlentities($state) ?>
-            </p>
-            <p class="profile-double-field">
-                Zip Code: <?php echo htmlentities($city) ?>
-                Country: <?php echo htmlentities($state) ?>
-            </p>
+                <p class="profile-double-field">
+                    Zip Code: <?php echo htmlentities($city) ?>
+                    Country: <?php echo htmlentities($state) ?>
+                </p>
 
-        </section>
-    </body>
+            </section>
+        </div>
+    </div>
+</body>
 
 </html>

@@ -1,63 +1,78 @@
 /* CSS for webpages with a user view */
 
 body{
-    background-color: #899d84;
+  background-color: #899d84;
 }
 
-#dashboard-body {
-  /* display: flex; */
-  margin: auto;
-  width: 100%;
+.content-body {
+/* display: flex; */
+margin: auto;
+width: 100%;
 }
 
 .side-nav {
-  /* display: inline-block; */
-  position: fixed;
-  /* float: left; */
-  height: 100%;
-  padding-top: 7em;
-  padding-left: 2%;
-  width: 20%;
-  background-color: rgb(255, 255, 255, 0.8);
+/* display: inline-block; */
+position: fixed;
+/* float: left; */
+height: 100%;
+padding-top: 7em;
+padding-left: 2%;
+width: 20%;
+background-color: rgb(255, 255, 255, 0.8);
 }
 
-#content {
-  flex-direction: row;
-  display: inline-flex;
-  justify-content: center;
-  float: right;
-  width: 80%;
-  margin:auto;
-  margin-top: 5%;
+.content {
+flex-direction: row;
+display: inline-flex;
+justify-content: center;
+float: right;
+width: 80%;
+margin:auto;
+margin-top: 5%;
 }
 
-#dashboard-middle {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+#dashboard-middle, #profile-settings {
+margin-left: auto;
+margin-right: auto;
+width: 50%;
 }
 
 #dashboard-middle img {
-  width: 60%;
+width: 60%;
 }
 
 #dashboard-right {
-  margin-right: 5%;
-  width: 25%;
-  float: right;
+margin-right: 5%;
+width: 25%;
+float: right;
 }
 
 .side-nav ul {
-  list-style-type: none;
+list-style-type: none;
 }
 
 .side-nav ul li a {
-  text-decoration: none;
+text-decoration: none;
 }
 
-/* Charity CSS */
+#profile-settings {
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}
 
+#profile-settings > * {
+background-color: rgba(191, 191, 191, 0.8);
+padding: 40px;
+border-radius: 20%;
+margin-bottom: 20px;
+}
 
-
-
-/* Rewards CSS */
+.profile-info {
+margin-right: 5%;
+width: 40%;
+float: right;
+background-color: rgb(255, 255, 255, 0.8);
+padding: 40px;
+border-radius: 20%;
+}

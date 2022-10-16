@@ -85,7 +85,7 @@ function showDonations() {
           card.appendChild(btn);
 
           //append total rewards
-          const rewards_node = document.createElement("h6");
+          const rewards_node = document.createElement("h7");
           const rewards_textnode = document.createTextNode(reward_arr[i]);
           rewards_node.appendChild(rewards_textnode);
           card.appendChild(rewards_node);
@@ -95,16 +95,9 @@ function showDonations() {
         }
 
         //append donut balance
-        let donut_balance_container = document.getElementById("donut-balance");
-        const donut_balance_node = document.createElement("h4");
-        const donut_balance_textnode = document.createTextNode(donut_balance);
-        donut_balance_node.appendChild(donut_balance_textnode);
-        donut_balance_container.appendChild(donut_balance_node);
-
-        const balance_node = document.createElement("h6");
-        const balance_textnode = document.createTextNode("Donut Balance");
-        balance_node.appendChild(balance_textnode);
-        donut_balance_container.appendChild(balance_node);
+        let donut_balance_container = document.getElementById("donut-balance-container");
+        const donut_balance_node = document.getElementById("donut-balance");
+        donut_balance_node.innerHTML = donut_balance;
       }
     })
     .catch((err) => console.error(err));

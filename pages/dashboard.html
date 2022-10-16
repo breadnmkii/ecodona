@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/dashboard.css" />
   </head>
   <body>
-    <div id="dashboard-body">
+    <div class="content-body">
       <div class="side-nav">
         <ul>
           <li>
@@ -32,13 +32,19 @@
         </ul>
       </div>
 
-      <div id="content">
+      <div class="content">
         <section id="dashboard-middle">
           <div id="donation-cards"></div>
         </section>
 
         <section id="dashboard-right">
-          <div id="donut-balance" class="card"></div>
+          <div id="donut-balance-container" class="card">
+            <div>
+              <img src="../images/icons/ecodona_icon.svg">
+              <h4 id = "donut-balance"></h4>
+            </div>
+            <h6>Donut Balance</h6>
+          </div>
 
           <div id="total-donations" class="card">
             <p>$1,234,567,890</p>
