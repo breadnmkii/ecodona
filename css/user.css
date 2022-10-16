@@ -1,5 +1,10 @@
 /* CSS for webpages with a user view */
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
 body{
   background-color: #899d84;
 }
@@ -19,6 +24,29 @@ padding-top: 7em;
 padding-left: 2%;
 width: 20%;
 background-color: rgb(255, 255, 255, 0.8);
+box-shadow: 0px 0px 60px 10px rgba(86, 108, 81, 0.9);
+}
+
+.side-nav ul {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.side-nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  margin: 20px;
+  padding: 20px;
+  background-color: #6B8465;
+  border-radius: 10px;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  color: black;
 }
 
 .content {
@@ -71,12 +99,47 @@ width: 40%;
 float: right;
 background-color: rgb(255, 255, 255, 0.8);
 padding: 40px;
-border-radius: 50px;
+border-radius: 20%;
 }
+
+
+/* Charity + Rewards CSS */
+.intro {
+  padding-bottom: 50px;
+}
+
+/* Charity CSS */
+
+
+/* Rewards CSS */
+.rewards-wrapper {
+  width: 80%;
+
+}
+
+.reward {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  margin: 50px 0px 50px 0px;
+  padding: 25px;
+
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  box-shadow: 0px 0px 40px -10px rgba(86, 108, 81, 0.9);
+}
+
+.reward-arrow {
+  height: 50px;
+  width: 50px;
+}
+
+/* Profile CSS */
 
 .profile-card h4, p {
   margin: 0;
-  /* margin-bottom: 20px; */
 }
 
 .profile h4 {
@@ -85,11 +148,39 @@ border-radius: 50px;
 
 .profile-info > * {
   padding: 10px;
-  background-color: #98b191;
+  /* background-color: #98b191; */
   border-radius: 30px;
-  margin-bottom: 20px;
+  width: 100%;
+  align-items: center;
+  border-radius: 30px;
+  height: fit-content;
 }
 
-.profile-double-field {
+/* .profile-info {
+  width: fit-content;
+  padding-top: 10px;
+  padding-bottom: 10px;
+} */
+
+/* .profile-double-field {
   display:inline-flex;
+} */
+
+.profile-double-field > p {
+  display:inline-flex;
+  justify-content: space-between;
+  width: 40%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #cbd5c9;
+}
+
+.profile-single-field > p {
+ 
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #cbd5c9;
+  margin-bottom: 20px;
 }
