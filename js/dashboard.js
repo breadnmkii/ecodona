@@ -97,6 +97,7 @@ function showDonations() {
 /**********************************************************************************************/
 /***  viewDetails(): shares event with another user ****************************/
 /**********************************************************************************************/
+/*
 document
   .getElementsByClass("view_details")
   .addEventListener("click", viewDetails, false);
@@ -104,3 +105,4 @@ document
 function viewDetails() {
   console.log("view details modules");
 }
+*/
