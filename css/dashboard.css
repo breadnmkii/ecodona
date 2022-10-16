@@ -52,6 +52,10 @@ body{
 }
 */
 
+#dashboard-middle img {
+  width: 32px;
+}
+
 .card {
   background-color: rgb(255, 255, 255, 0.8);
   padding: 24px;
